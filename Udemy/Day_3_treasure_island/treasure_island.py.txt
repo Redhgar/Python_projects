@@ -27,18 +27,18 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 print("You arrived to a crossroad. Which way do you want to continue?")
-left_or_right = input("Left or right? L or R ")
-if left_or_right == "L":
+left_or_right = input("Left or right? ").lower()
+if left_or_right == "left":
     print("On the road the gate is up?")
-    swim_or_wait = input("Swim or wait? S or W ")
-    if swim_or_wait == "W":
+    swim_or_wait = input("Swim or wait? ").lower()
+    if swim_or_wait == "wait":
         print("You arrived at a town. You see 3 different door.")
-        door = input("Which door do you choose? R, B, Y ")
-        if door == "R":
+        door = input("Which door do you choose? Red, blue or yellow? ").lower()
+        if door == "red":
             print("Burned by fire. Game over.")
-        elif door == "B":
+        elif door == "blue":
             print("Eaten by beasts. Game over.")
-        elif door == "Y":
+        elif door == "yellow":
             print("You win!")
         else:
             print("Game over.")
